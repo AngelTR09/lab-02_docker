@@ -1,23 +1,34 @@
 # Laboratorio 02
-Hoy utlizaremos docker compose para poder desplegar un servicio web y una base de
-datos
-STACK Tecnico
-API
+Hoy utlizaremos docker compose para poder desplegar un servicio web y una base de datos
+
+# STACK Tecnico
+## API
 - Aplicación JAVA dockerizarla (crear la imagen)
 - docker pull nmatsui/hello-world-api
 - clever_montalcini 3001
 - condescending_davinci 3000
 - $ docker run -d --rm -p 3000:3000 nmatsui/hello-world-api
 -
-BD PostgreSQL
+## BD PostgreSQL
 docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
-COMANDOS
+# COMANDOS
 Deben especificar los comandos que voy a ejecutar
+## Levantar un contenedor
 ```bash
 docker compose up -d
 ```
-CONFIGURACIONES
-.env
+## Dar de baja a un contenedor
+```bash
+docker compose stop db
+```
+## Dar de baja a todos los contendores
+```bash
+docker compose down
+```
+## Dar de baja a un contenedor
+
+# CONFIGURACIONES
+Se necesita crear un .env guiado del .env.example
 ```
 VAR=VALUE
 ```

@@ -30,5 +30,7 @@ services:
     image: postgres:13
     environment:
       - POSTGRES_USER=${UsuarioDB}
-      - POSTGRES_PASSWORD=${COntraseñaDB}
+      - POSTGRES_PASSWORD=${ClaveDB}
       - POSTGRES_DB=${NombreDB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data    

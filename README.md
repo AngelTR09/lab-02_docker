@@ -30,7 +30,8 @@ Debe permitir lo siguiente:
 ![Evidencia de cofuncionamiento del curl y sus puertos correspondientes](./evidencias/EvidenciaAPI123.png)
 
 - Configuración BD
-
+![Levantamiento de la base de datos](./evidencias/dockerc-compose-up-d-db.png)
+![Log al subir la base de datos](./evidencias/docker-compose-logs-db.png)
 - Uso de volúmenes
 - Uso de variables de entorno
 - En README. Responder los tipos de redes y los tipos de volumen que existen en

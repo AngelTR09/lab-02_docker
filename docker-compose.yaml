@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app01:
+    container_name: api01
+    build: ./api
+    image: nmatsui/hello-world-api
+    environment:
+      - MESSAGE=${NOMBRE}+app01
+    ports:
+      - "3000:3000"
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=mydatabase

@@ -9,7 +9,7 @@ services:
     ports:
       - "3000:3000"
 
-    app02:
+  app02:
       container_name: api02
       build: ./api
       image: nmatsui/hello-world-api

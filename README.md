@@ -1,29 +1,36 @@
 # Laboratorio 02
-
-Hoy utilizaremos docjer compose para poder desplegar un servicio web y base de datos
-
-STACK Tecnico 
-
+Hoy utlizaremos docker compose para poder desplegar un servicio web y una base de
+datos
+STACK Tecnico
 API
-    -Apliacion JABA dockerizarla (crear la imagen)
-        - docker pull nmatsui/hello-world-api
-
-DB Postgresql
-   - $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
-
-
-COMANDOS 
-
+- Aplicación JAVA dockerizarla (crear la imagen)
+- docker pull nmatsui/hello-world-api
+- clever_montalcini 3001
+- condescending_davinci 3000
+- $ docker run -d --rm -p 3000:3000 nmatsui/hello-world-api
+-
+BD PostgreSQL
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+COMANDOS
+Deben especificar los comandos que voy a ejecutar
+```bash
+docker compose up -d
+```
 CONFIGURACIONES
-
-
-Subir un docler compose, especificando configuracion y compando para espedicar el desplique. Deve permitir lo siguiente 
-- 3 copias de una API build local 
-- Configuracion DB
+.env
+```
+VAR=VALUE
+```
+# Actividad
+Trabajar un docker compose, especificando configuración y comandos para despliegue.
+Debe permitir lo siguiente:
+- 3 copias de una API build local
+- Configuración BD
+- Uso de volúmenes
 - Uso de variables de entorno
-- EN README. Responder 
-los tipos de redes y loos tupos de bolumen que exusten 
-- hacer uso de combentional commits 
-- repositorio publico 
-- uso de .gitignore
-- Captura de su proyecto desplegado
+- En README. Responder los tipos de redes y los tipos de volumen que existen en
+docker
+- Hacer uso de Conventional Commits
+- Repositorio publico
+- Uso de .gitignore
+- Opcional: Capturas de su proyecto desplegado

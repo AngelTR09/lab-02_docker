@@ -25,7 +25,12 @@ VAR=VALUE
 Trabajar un docker compose, especificando configuración y comandos para despliegue.
 Debe permitir lo siguiente:
 - 3 copias de una API build local
+![Evidencia de cofuncionamiento del docker compose](./evidencias/dockercomposeup-d--build.png)
+![Evidencia de cofuncionamiento del docker ps](./evidencias/dockerps.png)
+![Evidencia de cofuncionamiento del curl y sus puertos correspondientes](./evidencias/EvidenciaAPI123.png)
+
 - Configuración BD
+
 - Uso de volúmenes
 - Uso de variables de entorno
 - En README. Responder los tipos de redes y los tipos de volumen que existen en

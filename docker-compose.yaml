@@ -9,6 +9,14 @@ services:
     ports:
       - "3000:3000"
 
+    app02:
+      container_name: api02
+      build: ./api
+      image: nmatsui/hello-world-api
+      environment:
+        - MESSAGE=${NOMBRE}+app02
+      ports:
+        - "3001:3000"
   db:
     image: postgres:13
     environment:

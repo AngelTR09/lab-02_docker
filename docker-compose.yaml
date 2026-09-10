@@ -37,4 +37,4 @@ services:
 
 #Para almacenar datos, que sea si serán "percisitentes"
 volumes:
-  postgres_data:   
+  postgres_data:

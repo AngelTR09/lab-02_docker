@@ -58,12 +58,25 @@ Debe permitir lo siguiente:
 ![Lista de volumenes](./evidencias/volumen02dockervolumen_ls.png)
 
 ![Prueba de persistencia](./evidencias/evidenciaPersistente.png)
-- Aqui es donde vemos que aun se mantienen, tras abaje bajado y subido el docker
+- Aqui vemos que aun se mantienen, tras abaje bajado y subido el docker
 ![Prueba de persistencia](./evidencias/evidenciaPersistente1.png)
 - Uso de variables de entorno
 
-- En README. Responder los tipos de redes y los tipos de volumen que existen en
-docker
+- En README. Responder los tipos de redes y los tipos de volumen que existen en docker
+    - Redes:
+        -
+        - bridge: es la configración por defecto. Donde los contenedores estan en el mismo entorno aislado.
+        - host: es un contenedor usa la red de la misma computadora.
+        - none: contenedor aislado en su totalidad, sin intenet ni a otros contenedores.
+        - overlay: conecta contenedores entre varios servidores distintos.
+        - macvlan: da al contenedor su propia IP real, haciendolo parecer a un modem.
+
+    - Volúmenes:
+        - 
+        - Named volumenes: los administra de manera segura y para que las BD no pierda su información.
+        - Bind mounts: vincula una carpeta al contenedor.
+        - tmpfs mounts: usa  la memoria RAM para guardar diferentes archivos, y al apagar el contenedor todo desaparece.
+
 - Hacer uso de Conventional Commits
 - Repositorio publico
 - Uso de .gitignore

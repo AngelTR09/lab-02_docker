@@ -34,17 +34,34 @@ VAR=VALUE
 ```
 # Actividad
 Trabajar un docker compose, especificando configuración y comandos para despliegue.
+
 Debe permitir lo siguiente:
+
 - 3 copias de una API build local
+
 ![Evidencia de cofuncionamiento del docker compose](./evidencias/dockercomposeup-d--build.png)
+
 ![Evidencia de cofuncionamiento del docker ps](./evidencias/dockerps.png)
+
 ![Evidencia de cofuncionamiento del curl y sus puertos correspondientes](./evidencias/EvidenciaAPI123.png)
 
 - Configuración BD
+
 ![Levantamiento de la base de datos](./evidencias/dockerc-compose-up-d-db.png)
+
 ![Log al subir la base de datos](./evidencias/docker-compose-logs-db.png)
+
 - Uso de volúmenes
+
+![Configuracion del docker compose para los volumenes](./evidencias/evidencia01volumen.png)
+
+![Lista de volumenes](./evidencias/volumen02dockervolumen_ls.png)
+
+![Prueba de persistencia](./evidencias/evidenciaPersistente.png)
+- Aqui es donde vemos que aun se mantienen, tras abaje bajado y subido el docker
+![Prueba de persistencia](./evidencias/evidenciaPersistente1.png)
 - Uso de variables de entorno
+
 - En README. Responder los tipos de redes y los tipos de volumen que existen en
 docker
 - Hacer uso de Conventional Commits

@@ -73,6 +73,7 @@ Debe permitir lo siguiente:
         - Bind mounts: vincula una carpeta al contenedor.
         - tmpfs mounts: usa  la memoria RAM para guardar diferentes archivos, y al apagar el contenedor todo desaparece.
 - Uso de variables de entorno
+
 ![Uso correcto del .env.example](./evidencias/evi_variableEntorno1.png)
 ![Uso correcto del .env.example](./evidencias/evi_variableEntorno.png)
 ![Uso correcto del .env.example](./evidencias/evi_variableEntorno2.png)

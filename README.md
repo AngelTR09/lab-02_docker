@@ -25,7 +25,6 @@ docker compose stop db
 ```bash
 docker compose down
 ```
-## Dar de baja a un contenedor
 
 # CONFIGURACIONES
 Se necesita crear un .env guiado del .env.example
@@ -60,7 +59,6 @@ Debe permitir lo siguiente:
 ![Prueba de persistencia](./evidencias/evidenciaPersistente.png)
 - Aqui vemos que aun se mantienen, tras abaje bajado y subido el docker
 ![Prueba de persistencia](./evidencias/evidenciaPersistente1.png)
-- Uso de variables de entorno
 
 - En README. Responder los tipos de redes y los tipos de volumen que existen en docker
     - Redes:
@@ -76,6 +74,10 @@ Debe permitir lo siguiente:
         - Named volumenes: los administra de manera segura y para que las BD no pierda su información.
         - Bind mounts: vincula una carpeta al contenedor.
         - tmpfs mounts: usa  la memoria RAM para guardar diferentes archivos, y al apagar el contenedor todo desaparece.
+- Uso de variables de entorno
+![Uso correcto del .env.example](./evidencias/evi_variableEntorno1.png)
+![Uso correcto del .env.example](./evidencias/evi_variableEntorno.png)
+![Uso correcto del .env.example](./evidencias/evi_variableEntorno2.png)
 
 - Hacer uso de Conventional Commits
 - Repositorio publico

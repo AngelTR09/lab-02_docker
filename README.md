@@ -5,10 +5,8 @@ Hoy utlizaremos docker compose para poder desplegar un servicio web y una base d
 ## API
 - Aplicación JAVA dockerizarla (crear la imagen)
 - docker pull nmatsui/hello-world-api
-- clever_montalcini 3001
-- condescending_davinci 3000
 - $ docker run -d --rm -p 3000:3000 nmatsui/hello-world-api
--
+
 ## BD PostgreSQL
 docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 # COMANDOS
